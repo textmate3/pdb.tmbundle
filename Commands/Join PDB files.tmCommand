@@ -21,7 +21,7 @@ exec 3&lt;&gt; /tmp/hpipe
 echo -n . &gt;&amp;3
 
 # do all of your work here
-python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -j $TM_SELECTED_FILES
+"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -j $TM_SELECTED_FILES
 
 # now turn off the progress bar by closing file descriptor 3
 exec 3&gt;&amp;-

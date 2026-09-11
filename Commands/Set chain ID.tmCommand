@@ -17,7 +17,7 @@ output=$(CocoaDialog inputbox --title "Set chain ID to" \
 CHAIN=$(tail -n1 &lt;&lt;&lt; "$output")
 
 if [[ $CHAIN ]]; then
-	python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -c "$CHAIN"
+	"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -c "$CHAIN"
 fi</string>
 	<key>input</key>
 	<string>selection</string>

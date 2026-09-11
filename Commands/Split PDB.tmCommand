@@ -17,7 +17,7 @@ output=$(CocoaDialog inputbox --title "Split PDB based on split argument" \
 split=$(tail -n1 &lt;&lt;&lt; "$output")
 
 if [[ $split ]]; then
-	python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -i $split -q $TM_FILEPATH
+	"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -i $split -q $TM_FILEPATH
 fi
 
 # Open new files in new TextMate project

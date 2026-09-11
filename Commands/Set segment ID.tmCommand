@@ -17,7 +17,7 @@ output=$(CocoaDialog inputbox --title "Set segment ID to" \
 SEGID=$(tail -n1 &lt;&lt;&lt; "$output")
 
 if [[ $SEGID ]]; then
-	python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -s "$SEGID"
+	"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -s "$SEGID"
 fi</string>
 	<key>input</key>
 	<string>selection</string>

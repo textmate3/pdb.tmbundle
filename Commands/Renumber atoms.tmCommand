@@ -17,7 +17,7 @@ output=$(CocoaDialog inputbox --title "Renumber atoms starting from" \
 atnum=$(tail -n1 &lt;&lt;&lt; "$output")
 
 if [[ $atnum ]]; then
-	python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -p $atnum
+	"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -p $atnum
 fi</string>
 	<key>fallbackInput</key>
 	<string>document</string>

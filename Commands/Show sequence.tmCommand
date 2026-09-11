@@ -9,7 +9,7 @@
 
 # Reformat the PDB file
 
-python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -f</string>
+"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -f</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
