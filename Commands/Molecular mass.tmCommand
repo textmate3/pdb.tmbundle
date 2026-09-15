@@ -9,7 +9,7 @@
 
 # Calculate molecular mass of structure
 
-python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -mf</string>
+"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -mf</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>

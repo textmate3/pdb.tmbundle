@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env python
+	<string>#!/usr/bin/env python3
 
 # Get the location of the carret. Search back in the document for the first
 # occurance of an ATOM line and print it at the carret location.

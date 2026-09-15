@@ -17,7 +17,7 @@ output=$(CocoaDialog inputbox --title "Renumber residues starting from" \
 resnum=$(tail -n1 &lt;&lt;&lt; "$output")
 
 if [[ $resnum ]]; then
-	python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -r $resnum
+	"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -r $resnum
 fi</string>
 	<key>fallbackInput</key>
 	<string>document</string>

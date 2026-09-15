@@ -9,7 +9,7 @@
 
 # Set the chain ID to the (first character of) the segment ID
 
-python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -x</string>
+"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -x</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>

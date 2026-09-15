@@ -9,7 +9,7 @@
 
 # Convert nucleic acid 3 letter code to one letter code
 
-python "$TM_BUNDLE_SUPPORT"/PDBeditor.py -b</string>
+"${TM_PYTHON:-python3}" "$TM_BUNDLE_SUPPORT"/PDBeditor.py -b</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
